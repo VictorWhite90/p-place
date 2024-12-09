@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wells Carlton Hotel & Apartments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gpt.css">
+    <style>
+
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: scroll;
+        
+      }
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        
+        .header {
+  background-color: #f8f9fa; /* Light background for better visibility */
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px; /* Reduce logo size for smaller screens */
+  }
+
+  .contact-info p {
+    font-size: 0.8rem; /* Adjust font size for small devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info-location,
+  .contact-info-call {
+    text-align: center; /* Center-align text on small screens */
+  }
+}
+
+
+        .navbar {
+            background-color: #000000;
+        }
+        .navbar a {
+            color: white;
+        }
+        nav.navbar {
+    height: 150px; /* Adjust the height of the navbar */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Use the imported font */
+}
+
+.navbar-nav .nav-link {
+    font-size: 2rem; /* Make text larger */
+    padding: 0.5rem 1rem; /* Add spacing for better aesthetics */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Ensure links are visible on a dark background */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0ad4e; /* Add a hover effect */
+}
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+        .logo {
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 0;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .booking-bar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+     /* Background container */
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background images */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.background-image.active {
+  opacity: 1;
+}
+
+/* Overlay content */
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* Text container styles */
+.text-container {
+  max-width: 600px; /* Adjust as needed */
+  text-align: center;
+}
+  .perfect{
+    font-size: 4.6em;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+   
+    /* Carousel Container */
+    .carousel-container {
+      width: 79%;
+      max-width: 1200px;
+      height: 30rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: space-between;
+      height: 70vh; /* Ensure full screen height */
+      margin: 8rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-item img {
+      margin: 2em auto;
+    }
+
+    /* Caption on the Left */
+    .carousel-caption-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  width: 47%;
+  height: 300px;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Adds a subtle shadow */
+}
+
+
+    .carousel-caption-left h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .carousel-caption-left p {
+      font-size: 1rem;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .carousel-caption-left a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    
+  #caption{
+    margin-top: 4r;
+  }
+
+
+
+    /* Main Carousel */
+    .carousel-inner {
+      width: 80%;
+      margin-left: auto;
+      overflow: hidden;
+      border-radius: 10px;
+ 
+    }
+
+    .carousel-inner img {
+      width: 100%;
+     
+      margin-left: 6rem;
+    }
+
+    /* Carousel Controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      z-index: 10;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .carousel-caption-left {
+        display: none;
+        width: 90%;
+        left: 5%;
+        height: 200px;
+        transform: translateY(-50%);
+      }
+
+      .carousel-inner {
+        width: 100%;
+        
+      }
+    }
+ 
+
+ /* General roomSection Styling */
+ .rooms {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 2rem;
+      
+    }
+  
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #343a40; /* Dark text color */
+    }
+  
+    /* Room Card Styling */
+    .room-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+  
+    .room-card {
+      position: relative;
+      overflow: hidden;
+      width: 350px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .room-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Transparent Blue Background on Image */
+    .room-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+  
+    .room-card .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(126, 126, 126, 0.213); /* Transparent Blue */
+      z-index: 1; /* Make sure it sits on top of the image */
+      opacity: 0.5; /* Adjust transparency */
+    }
+  
+    /* Room Details Styling */
+    .room-details {
+      position: relative;
+      padding: 1rem;
+      text-align: center;
+      z-index: 2; /* Ensures text sits above the overlay */
+    }
+  
+    .room-details h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .room-details p {
+      margin: 0.5rem 0;
+    }
+  
+    .room-details .price {
+      font-weight: bold;
+      font-size: 1.9rem;
+      color: #4d402c;
+    }
+  
+    /* Button Styling */
+    .room-details .btn {
+      background-color: #3d3111;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-left: -5em;
+      text-transform: uppercase;
+      width: 135px;
+      
+    }
+  
+    .room-details .btn a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .room-details .btn:hover {
+      background-color: #141515;
+      color: #fff;
+    }
+
+    .room-icons {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #4d402c; /* Customize icon color */
+}
+
+.icon i {
+  margin-right: 5px;
+}
+
+.rare{
+  margin: 7em auto;
+}
+        
+
+/* General Layout */
+.HOTEL-services {
+  display: flex;
+  flex-wrap: wrap; /* Wrap content on small screens */
+  gap: 20px;
+}
+
+/* Text Section */
+.HOTEL-services-text {
+  flex: 1; /* Take up equal space */
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 50%; /* Limit width to 50% */
+}
+
+/* Image Section */
+.HOTEL-services-image {
+  flex: 1; /* Take up equal space */
+  max-width: 50%; /* Limit width to 50% */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+/* Image Styling */
+.HOTEL-services-image img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+
+  .located{
+    display: none;
+  }
+  
+  .about-cons{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) { 
+      .calton-desp-p{
+        background-color: #3d3111;
+      }
+
+        .calton-desp-img img {
+            max-width: 200px; /* Adjust the size for mobile */
+        }
+        
+    }
+
+
+  .carousel-container
+  {
+    margin-top: -7em;
+  }
+  .footer{
+    margin-top: em;
+  }
+
+  .locate-us{
+    display: none;
+  }
+
+  .HOTEL-services-text,
+  .HOTEL-services-image {
+    max-width: 100%; /* Take full width on smaller screens */
+    flex: 0 0 100%; /* Flex item takes full width */
+  }
+
+  .HOTEL-services-image {
+    justify-content: center; /* Center image on small screens */
+  }
+}
+
+/* Styles for devices between 1024px and 1440px (common desktop range) */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .about-cons{
+       width: 75%;
+       padding: 2em;
+       justify-content: start;
+    }
+    .calton-desp-p{
+      font-size: larger;
+    }
+
+    .mg-fluid {
+      max-width: 144em;
+    }
+}
+
+
+
+
+.hero {
+    background: url('images/plesant\ street.jpg') center/cover no-repeat;
+    height: 550px;
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 3em;
+  }
+  
+  .hero-overlay {
+    display: flex;
+    background: rgba(0, 0, 0, 0.374);
+    padding: 20px;
+    text-align: start;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: -20rem;
+  }
+  .hero-overlay-para1{
+    width: 43%;
+  }
+  .hero-overlay-para2{
+    width: 45%;
+
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+ 
+   /* About Section */
+   .aboutx {
+    display: flex;
+    /* padding: 40px 20px; */
+    gap: 30px;
+    width: 60em;
+    height: 34rem;
+    margin: 40px auto;
+    background: #f8f8f8;
+    position: relative;
+    z-index: 2; /* Ensures the About section appears in front of the Hero section */
+    margin-top: -15rem; /* Overlaps the Hero section */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .aboutx-container {
+    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+  }
+  
+  .aboutx-content {
+    width: 40%;
+    background-color: #0d9cd4;
+    height: 100%;
+    padding: 2em;
+  }
+  
+  .about-content h4 {
+    color: #2d2d2d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-content h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff
+
+  }
+  
+  .about-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .aboutx button{
+    background-color: black;
+    color: white;
+    margin-top: em;
+    width: 15em;
+    height: 4em;
+    border: none;
+  }
+  .aboutx button a{
+    text-decoration: none;
+    color: white;
+  }
+  .about-image {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    max-width: 800px; /* Adjust as needed */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2d2d2d;
+  }
+
+  
+  .about-image img,
+  .about-image video {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+
+            /* foootter */
+
+
+            footer {
+      background-color: #d1e9eb;
+      
+      color: #333;
+      height: 33em;
+    }
+
+    .footer h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #000;
+      justify-content: start;
+      padding: 20px 10px;
+    }
+
+    .footer .btn {
+      background-color: #6c5236;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+    }
+
+    .footer .btn:hover {
+      background-color: #523f2a;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #6c5236;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .footer ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .parent-contaiin{
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    </style>
+
+</head>
+<body>
+
+  <div class="parent-contaiin">
+
+
+  <header class="header container-fluid py-3">
+    <div class="row align-items-center">
+      <!-- Logo Section -->
+      <div class="col-12 col-md-4 text-center text-md-start">
+        
+        <div class="logo" style="width: 189px; margin: 0 auto;">
+          <a href="index.html">
+        <img
+          src="images/6-5-e1626882432619.png"
+          alt=""
+          style="height: 50px; display: block; margin: 0 auto;"
+        />
+      </a>
+        <span
+          style="font-weight: bold; display: block; text-align: center;"
+        >
+         
+        </span>
+      </div>
+      </div>
+  
+      <!-- Contact Information Section -->
+      <div class="col-12 col-md-8 mt-3 mt-md-0">
+        <div class="contact-info row">
+          <!-- Location -->
+          <div class="contact-info-location col-12 col-lg-6 text-center text-lg-start mb-2 mb-lg-0">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              #8 Gado Nasko Close, Off Jose Marti Str, Asokoro, Abuja, Nigeria
+              46 km from Abuja Int'l Airport
+            </p>
+          </div>
+  
+          <!-- Contact Details -->
+          <div class="contact-info-call col-12 col-lg-6 text-center text-lg-start">
+            <p>
+              <i class="fas fa-phone"></i> +234 908 187 9231
+            </p>
+            <p>
+              <i>+234 817 229 4128</i>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:reservations@wellscarlton.com">reservations@wellscarlton.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-nav sticky-nav">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-0"> <!-- Remove ms-auto for left alignment -->
+                  <li class="nav-item"><a class="nav-link " href="Rooms.html">Rooms</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Services</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Dining</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Events</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link " href="#">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+    <div class="container-fluid p-0">
+        <!-- Background Container -->
+        <div class="background-container">
+          <div class="background-image" style="background-image: url('images/plesant\ street.jpg');"></div>
+          <div class="background-image active" style="background-image: url('images/Apo-3.jpeg');"></div>
+          <div class="background-image" style="background-image: url('images/plesant2.jpg');"></div>
+          <div class="background-image" style="background-image: url('images/Apo-1.jpeg');"></div>
+          <div class="background-image" style="background-image: url('images/plesant8.jpg');"></div>
+          <div class="background-image" style="background-image: url('images/IMG_4935.jpg');"></div>
+          <div class="background-image" style="background-image: url('images/DSC_2654.jpg');"></div>
+          <div class="background-image" style="background-image: url('images/I-scaled.jpg');"></div>
+          <div class="background-image" style="background-image: url('images/plesant\ street2.jpg');"></div>
+
+        </div>
+    
+        <!-- Overlay Content -->
+        <div class="overlay-content d-flex justify-content-center align-items-center">
+  
+        </div>
+      </div>
+
+
+
+
+      
+    <section class="container mt-5">
+        <div class="booking-bar d-flex justify-content-between align-items-center sticky-navs">
+            <input type="date" class="form-control w-25" placeholder="Check In">
+            <input type="date" class="form-control w-25" placeholder="Check Out">
+            <select class="form-select w-25">
+                <option>Adults</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <button class="btn btn-primary w-25"><a href="Rooms.html" class="room-btn text-light" style="text-decoration: none;">Check Rooms</a></button>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="rooms">
+      <h1 class="section-title" style=" font-size: 2.8rem; font-family: 'Times New Roman', Times, serif;">Rooms & Rates</h1>
+      <div class="room-cards">
+        <!-- Deluxe Room -->
+        <div class="room-card">
+          <img src="images/Apo-4.jpeg" alt="Deluxe Room">
+          <div class="overlay"></div> <!-- Transparent Blue Overlay -->
+          <div class="room-details">
+            <div class="room-details-first d-flex justify-content-between">
+  
+              
+              <div class="room-details-first-details" style="font-size: small;">
+                <h2>Penthouse I</h2>
+              <p>Room size: 42 m²-48 m²</p>
+              </div>
+    
+              <div class="room-icons">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <span class="icon"><i class="fas fa-bathtub"></i></span>
+                <span class="icon"><i class="fas fa-bed"></i></span>
+              </div>
+              
+            </div>
+         
+    
+            <div class="room-details-second d-flex justify-content-between">
+              <div class="room-details-price">
+                <p class="price">₦2,000,000</p>
+              </div>
+              
+              <div class="room-details-btn mt-5">
+                <button class="btn"><a href="Rooms.html">Book Now</a></button>
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+  
+  
+  
+  
+        <!-- Standard Room -->
+        <div class="room-card">
+          <img src="images/3-bedinter-20.jpg" alt="Deluxe Room">
+          <div class="overlay"></div> <!-- Transparent Blue Overlay -->
+          <div class="room-details">
+            <div class="room-details-first d-flex justify-content-between">
+  
+              
+              <div class="room-details-first-details" style="font-size: small;">
+                <h2>Penthouse II</h2>
+              <p>Room size: 42 m²-48 m²</p>
+              </div>
+    
+              <div class="room-icons">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <span class="icon"><i class="fas fa-bathtub"></i></span>
+                <span class="icon"><i class="fas fa-bed"></i></span>
+              </div>
+              
+            </div>
+         
+    
+            <div class="room-details-second d-flex justify-content-between">
+              <div class="room-details-price">
+                <p class="price">₦2,500,000</p>
+              </div>
+              
+              <div class="room-details-btn mt-5">
+                <button class="btn"><a href="Rooms.html">Book now</a></button>
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+  
+  
+  
+  
+        <!-- Penthouse -->
+        <div class="room-card">
+          <img src="images/kkd_optimized.jpg" alt="Deluxe Room">
+          <div class="overlay"></div> <!-- Transparent Blue Overlay -->
+          <div class="room-details">
+            <div class="room-details-first d-flex justify-content-between">
+  
+              
+              <div class="room-details-first-details" style="font-size: small;">
+                <h2>Exclusive II</h2>
+              <p>Room size: 42 m²-48 m²</p>
+              </div>
+    
+              <div class="room-icons">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <span class="icon"><i class="fas fa-bathtub"></i></span>
+                <span class="icon"><i class="fas fa-bed"></i></span>
+              </div>
+              
+            </div>
+         
+    
+            <div class="room-details-second d-flex justify-content-between">
+              <div class="room-details-price">
+                <p class="price">₦4,500,000</p>
+              </div>
+              
+              <div class="room-details-btn mt-5">
+                <button class="btn"><a href="Rooms.html">Book Now</a></button>
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+  
+  
+      </div>
+    </section>
+    
+    <h1 class="perfect text-center my-5 fs-1 fs-md-2 fs-lg-3">The Perfect Stay, Guaranteed</h1>
+
+
+    
+    <div class="HOTEL-services d-flex flex-wrap justify-content-between align-items-center m-auto p-3" 
+    style="background-color: rgba(112, 227, 245, 0.12); width: 83%;">
+  <!-- Text Section -->
+  <div class="HOTEL-services-text text-start mt-5 p-3 flex-grow-1">
+   <!-- Header -->
+   <div class="HOTEL-services-header">
+     <h3>Hotel Features</h3>
+   </div>
+  
+   <!-- Features List -->
+   <div class="Hotel-Features-parag d-flex flex-wrap mt-3">
+     <div class="Hotel-Features-parag-first me-4">
+       <ul>
+         <li>Check in: 02:00 PM</li>
+         <li>Check out: 12:00 PM</li>
+         <li>Free parking space</li>
+         <li>Group Bookings</li>
+       </ul>
+     </div>
+     <div class="Hotel-Features-parag-second">
+       <ul>
+         <li>Transfer Service</li>
+         <li>Facilities for the Disabled</li>
+         <li>In-Room Dining</li>
+         <li>Group Reservations</li>
+       </ul>
+     </div>
+   </div>
+  
+   <!-- Additional Services -->
+   <div class="other-services mt-4">
+     <div class="HOTEL-services-smheader">
+       <h5>You Can Also Use</h5>
+     </div>
+     <div class="room-features-icon d-flex justify-content-between align-items-center mt-3" style="width: 150px;">
+       <div class="room-features-icon-1 text-center">
+         <i class="fas fa-wifi fa-2x"></i>
+         <p>Free Wi-Fi</p>
+       </div>
+       <div class="room-features-icon-4 text-center">
+         <i class="fas fa-wine-glass fa-2x"></i>
+         <p>Minibar</p>
+       </div>
+     </div>
+   </div>
+  </div>
+  
+  <!-- Image Section -->
+  <div class="HOTEL-services-image flex-grow-1">
+   <img src="images/plesant8.jpg" alt="Reception" class="img-fluid">
+  </div>
+  </div>
+
+
+
+  <section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-overlay-para1">
+            <h2>Leading Way In Bridging The Housing Gap!</h2>
+        </div>
+      
+
+        <div class="hero-overlay-para2">
+            <p>From affordable homes to horticulture, we ensure quality delivery and cost-savings opportunities for our clients.</p>
+        </div>
+     
+    </div>
+  </section>
+
+
+  
+  <section class="aboutx">
+    <div class="aboutx-container">
+      <div class="aboutx-content">
+        <h4>More About Us</h4>
+        <h2>15 years of quality and successful projects</h2>
+        <p>
+          Established in 2006, Brains and Hammers real estate is backed by decades of insight and expertise. Over the years, we have successfully carved a niche as the best in building high-end infrastructures and delivering unparalleled experiences for our clients.
+        </p>
+        <button><a href="Rooms.html"><p>Book an Apartment now</p></a></button>
+      </div>
+
+      <div class="about-image">
+        <img id="aboutImage" src="images/Apo-1.jpeg" alt="Building">
+        <div class="play-button" id="playButton">
+          <span>&#9658;</span>
+        </div>
+        <video id="aboutVideo" muted loop autoplay style="display: none; object-fit: cover;">
+          <source src="videos/New Project - Made with Clipchamp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="rare bg-black d-flex justify-content-center align-items-center" style="width: 63%;">
+      <img src="images/rare_dahlia_banner.jpg.webp" alt="" class="img-fluid" style="width: 100%;">
+  </div>
+
+
+
+<div class="spa d-flex justify-content-center align-items-center">
+  <img src="images/spa_banner.jpg.webp" alt="Spa Banner" class="w-50 mt-4">
+</div>
+
+  
+  
+    
+
+
+
+
+    <!-- footer -->
+
+  
+
+
+
+    <footer class="footer mt-5">
+      <div class="container d-flex">
+      
+          <!-- Locate Us Section -->
+          <div class=" bg-white mt-4 col-lg-3 col-md-6 mb-4" style="height: 30em; width: 33%;">
+              <div class="locate-content p-3 m-auto" style="height: 27em; width: 90%;">
+                  <h3 style="font-size: 30px;">Locate Us</h3>
+                  <button class="btn btn-sm w-50"  style="height: 10%;">View on Map</button>
+  
+                  <h2 class="mt-5">Places Near by</h2>
+                  <ul class="mt-3">
+                    <li>1. H-Medix Pharmacy - 1.7 km, 4 Minutes Drive</li>
+                    <li>2. Ecowas - 1.5 km, 4 Minutes Drive</li>
+                    <li>3. World Bank - 1.8 km, 4 Minutes Drive</li>
+                    <li>4. Littlemates Park - 6.0 km, 14 Minutes Drive</li>
+                  </ul>
+              </div>
+           
+          </div>
+          
+          <!-- About Us Section -->
+          <div class="col-lg-3 col-md-6 p-5 mb-4 d w-75 j">
+  
+              <div class="calton-desp d-flex justify-content-between m-auto" style="font-size: smaller;  width: 80%; ">
+  
+                  <div class="calton-desp-img">
+                      <img src="images/logoII (1).png" alt="The Wells Carlton Logo" class="img-fluid mb-3" style="max-width: 120px;">
+                  </div>
+                 
+  
+  
+                  <div class="calton-desp-p w-75">
+                      <p>
+                          The Wells Carlton Hotel & Apartments is a beautiful, fantasy-like journey into a glamorous world of pure
+                          luxury, privacy, exceptional service, and gratifying indulgence. It is located in one of the most secured
+                          and serene locations in Abuja.</p>
+                  </div>
+                 
+              </div>
+            
+      
+  
+          <!-- Connect With Us Section -->
+  
+          <div class="connet-sec d-flex justify-content-between m-auto" style="height: 15em;">
+              <div class="">
+                  <h3>Connect With Us</h3>
+                  <p><i class="fas fa-map-marker-alt"></i> 8 Gado Nasko Close, Off Jose Marti Str., Asokoro, Abuja.</p>
+                  <p><i class="fas fa-phone"></i> +234 908 187 9231</p>
+                  <p><i class="fas fa-envelope"></i> reservations@wellscarlton.com</p>
+                  <p>© 2022 The Wells Carlton Hotel & Apartment. Privacy Policy</p>
+                </div>
+        
+                <!-- Useful Links Section -->
+                <div class="">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <li><a href="#">Restaurant Menu</a></li>
+                    <li><a href="#">Employee Portal</a></li>
+                    <li><a href="#">Tirtaayu SPA</a></li>
+                  </ul>
+                  <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeCarouselImage(index) {
+            const carousel = document.querySelector('#roomCarousel');
+            const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+            carouselInstance.to(index);
+        }
+    </script>
+
+    <script>
+
+const images = document.querySelectorAll('.background-image');
+    let currentIndex = 0;
+  
+    function changeBackground() {
+      // Remove 'active' class from all images
+      images.forEach((img) => img.classList.remove('active'));
+  
+      // Add 'active' class to the current image
+      images[currentIndex].classList.add('active');
+  
+      // Update the index for the next image
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+  
+    // Change the background every 8 seconds
+    setInterval(changeBackground, 8000);
+  
+    // Initialize the first image
+    changeBackground();
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const playButton = document.getElementById("playButton");
+  const video = document.getElementById("aboutVideo");
+  const image = document.getElementById("aboutImage");
+
+  playButton.addEventListener("click", () => {
+    // Hide the image and play button
+    playButton.style.display = "none";
+    image.style.display = "none";
+
+    // Show the video and start playback
+    video.style.display = "block";
+    video.play();
+  });
+});
+    </script>
+
+
+</div>
+</body>
+</html>
